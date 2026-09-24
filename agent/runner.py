@@ -4,7 +4,7 @@ from tools.web_search import web_search_tool,get_response
 import os
 import json
 
-SYSTEM_PROMPT = """your are a professional researcher,you have given a tool called web_search_tool you have to multiple research atleast do 3 to 5 searches,stop until and unless you have enough data based on the user query and after researching you have to response in this format:
+SYSTEM_PROMPT = """your are a professional researcher,you have given a tool called web_search_tool you have to multiple research atleast do 2 to 3 searches,stop until and unless you have enough data based on the user query and after researching you have to response in this format:
 
 # [Research Topic]
 
