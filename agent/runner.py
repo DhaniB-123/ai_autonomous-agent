@@ -32,7 +32,7 @@ def get_responses(message : str):
     
         response = client.chat.completions.create(
             messages=Message,
-            model="llama-3.1-8b-instant",
+            model="openai/gpt-oss-20b",
             tools=[web_search_tool]
         )
         tool_Call = response.choices[0].message.tool_calls
