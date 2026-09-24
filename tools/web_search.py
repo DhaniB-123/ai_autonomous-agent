@@ -13,7 +13,7 @@ def get_response(query : str):
     client = TavilyClient(api_key=api_key)
     response = client.search(query)
     result  = response["results"]
-    return "\n\n".join([r["content"][:500] for r in result])
+    return "\n\n".join([r["content"][:300] for r in result])
 
 
 
